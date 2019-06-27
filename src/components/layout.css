@@ -15,12 +15,16 @@ figcaption,
 figure,
 footer,
 header,
-main,
 menu,
 nav,
 section,
 summary {
   display: block;
+}
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1rem;
 }
 audio,
 canvas,
@@ -619,4 +623,12 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+
+
+.code-editor {
+  background-color: #123456;
+  height: 100%;
+  grid-row: span 2;
 }
